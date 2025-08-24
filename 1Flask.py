@@ -8,9 +8,9 @@ def home():
 
 @app.route('/summarize',methods=['POST'])
 def summarize():
-    if 'pdf' not in request.files:
+    if '' not in request.files:
         return jsonify ({"erorr":"No file Uploaded"}),400
-    file=request.files["pdf"]
+    file=request.files[""]
     filename=file.filename
     # ⚠️ For now: fake summary instead of ML
     summary = "This is a dummy summary with citations [1], [2]."
