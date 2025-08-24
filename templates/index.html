@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document Upload</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Montserrat:ital@0;1&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- BoxIcons for upload icon -->
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Timeline</a>
+        <a href="#">Sponsor</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </nav>
+  <main class="main_up">
+    <div class="upload_Sec">
+      <label for="imageUpload" class="upload_button">
+        <i class="bx bx-cloud-upload"></i>
+        <span>Upload File</span>
+      </label>
+      <input type="file" id="imageUpload" accept="image/*" />
+
+      <div id="drop-zone" class="drop-zone">
+        <p>Or drag & drop your image here</p>
+      </div>
+
+      <h2>Try our website</h2>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
